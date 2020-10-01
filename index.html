@@ -13,9 +13,46 @@
 
     <div class="form">
         <form id="survey-form">
-            <input type="text" id="name" value="Enter your name here" required>
-            <input type="email" id="email" value="Enter your email" required>
-            <input type="number" id="number" min="16" max="60">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label"> Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age</label>
+                <input type="number" id="number" min="16" max="60" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <p>Which of the following best describes your political ideology?</p>
+                <select id="dropdown" required>
+                    <option disabled selected value>Select one</option>
+                    <option value="conservative">Conservative</option>
+                    <option value="liberal">Liberal</option>
+                    <option value="progressive">Progressive</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="religion"><input type="radio" name="religion" value="religious">Religious</label>
+                <label for="religion"><input type="radio" name="religion" value="non-religious">Non-religious</label>
+            </div>
+
+            <div class="form-group">
+                <p>If religious, what religious affiliation do you have?</p>
+                <label for="religionAffiliation"><input type="checkbox" name="religionAffiliation" value="Christian">Christianity</label>
+                <label for="religionAffiliation"><input type="checkbox" name="religionAffiliation" value="Islam">Islam</label>    
+                <label for="religionAffiliation"><input type="checkbox" name="religionAffiliation" value="Judaism">Judaism</label>  
+                <label for="religionAffiliation"><input type="checkbox" name="religionAffiliation" value="Hinduism">Hinduism</label>  
+                <label for="religionAffiliation"><input type="checkbox" name="religionAffiliation" value="Other">Other</label>      
+            </div>
+
+            <div class="form-group">
+                <textarea id="comment" placeholder="Enter your comment here..."></textarea>
+                <button type="submit" id="submit">Submit</button>
+            </div>
+            
         </form>
     </div>
 
