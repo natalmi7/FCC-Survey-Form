@@ -18,13 +18,14 @@ body {
 #description {
     font-size: 18px;
     text-align: center;
+    margin: 30px 0;
 }
 
 .form {
 background-color: rgb(206, 179, 221, .65);
-margin: auto;
-height: auto;
+margin: 0 auto 50px auto;
 width: 600px;
+height: fit-content;
 }
 
 #survey-form {
@@ -35,25 +36,34 @@ width: 600px;
     padding: 15px;
 }
 
-label {
+.form-group label {
     display: flex;
     align-items: center;
     margin-bottom: 1em;
 }
 
-.box {
+.form-group .box {
     width: 500px;
+    height: 25px;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.form-group p {
+    margin-bottom: 1em;
 }
 
 #comment {
+    box-sizing: border-box;
     height: 150px;
-    width: 100%;
+    width: 500px;
     font-family: 'Montserat', sans-serif;
     padding: 10px;
 }
 
 #submit {
-    width: 100%;
+    width: 500px;
     border: 5%;
     height: 30px;
+    cursor: pointer;
 }
